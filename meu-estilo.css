@@ -1,0 +1,385 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container{
+    height: 100%;
+    flex-wrap:wrap;
+}
+
+/*LOGO*/
+
+.nome{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0px;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    align-content: center;
+  
+}
+
+.tituloNome{
+    border: 2px solid black;
+    padding: 9px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.tituloNome:hover{
+    background-color: #5D7BC3;
+    color: white;
+    transform: scale(1.05);
+}
+
+/*MENU LATERAL*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu a{
+ padding: 7px;
+ margin-left: 10px;
+ border: 2px solid black;
+ cursor: pointer;
+ color: black;
+ transition-property: transform;
+ transition-duration: 1s;
+}
+
+.menu a:hover{
+    background-color: #5D7BC3;
+    color: white;
+    transform: scale(1.08);
+}
+
+/*AVATAR*/
+.nova{
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 10% 10% 50% 10% 15%;
+}
+.planeta{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 340px;
+    margin-left: 40px;
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(2, 1.9, 1.75, 1.5, 1, 0.5, 0);
+    animation-delay: 0.5s;
+    animation-fill-mode:backwards;
+}
+
+.planeta1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -100px;
+    margin-left: 200px;
+    animation-name: fad1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(2, 1.9, 1.75, 1.5, 1, 0.5, 0);
+    animation-delay: 0.5s;
+    animation-fill-mode:backwards;
+}
+
+.planeta2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+    margin-left: -30px;
+    animation-name: fad2;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(2, 1.9, 1.75, 1.5, 1, 0.5, 0);
+    animation-delay: 0.5s;
+    animation-fill-mode:backwards;
+}
+
+.planeta3{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -320px;
+    margin-left: 150px;
+    animation-name: fad3;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(2, 1.9, 1.75, 1.5, 1, 0.5, 0);
+    animation-delay: 0.5s;
+    animation-fill-mode:backwards;
+}
+@keyframes fade{
+    from{
+        margin-bottom: 120px;
+        
+    }
+    to{
+        margin-bottom: 340px;
+    }
+}
+@keyframes fad1{
+    from{
+        margin-bottom: 120px;
+    }
+    to{
+        margin-bottom: -100px;
+    }
+}
+
+@keyframes fad2{
+    from{
+        margin-bottom: 120px;
+    }
+    to{
+        margin-bottom: 180px;
+    }
+}
+
+@keyframes fad3{
+    from{
+        margin-bottom: 120px;
+    }
+    to{
+        margin-bottom: -320px;
+    }
+}
+.avatar{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.avatar a{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+/*LINHA*/
+
+.avatar div{
+    margin-top: 10px;
+    
+    background-color: black;
+    width: 23em;
+    height: 2px;
+}
+
+.avatar p{
+    margin-top: 20px;
+}
+
+.img{
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 250px;
+  object-fit: cover;
+  width: 250px;  
+  transition-property: transform;
+  transition-duration: 1s;
+  margin-top:20px ;
+ 
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+/*PROJETOS*/
+
+#projetos{
+    display: grid;
+    padding: 10px;
+    padding-top: 79px;
+    height: 100vh;
+    
+}
+
+.titulo{
+    justify-self: center;
+    grid-column-start: 2;  
+    grid-template-columns: 1fr; 
+    
+}
+
+.conteudo{
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    grid-template-rows: 50px 3fr ;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3px;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 98%;
+}
+
+.projeto1{
+    background-color: black;
+    width: 100%;
+    height: 90%;
+    grid-column-start: 1;
+   
+}
+.projeto2{
+    background-color: black;
+    width: 100%;
+    height: 90%;
+    grid-column-start: 2;
+     
+}
+.projeto3{
+    background-color: black;
+    width: 100%;
+    height: 90%;
+    grid-column-start: 3;
+}
+
+/* SOBRE */
+#dados{
+    margin-top: -90px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    
+}
+
+.contato{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    width: auto;
+    height: 90%;
+    grid-column: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sobre{
+    grid-column: 2;
+    padding: 0px 10px;
+}
+
+.sobre h2{
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sobre p{
+    text-align: justify;
+}
+
+/* FORMULÁRIO */
+.formularioContato{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+    padding: 5px;
+    
+}
+
+label{
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 15px;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.textoInput{
+    padding-bottom: 30px;
+}
+
+ input:hover{
+    border: 1.5px solid black;
+}
+
+#botaoEnviar{
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 1px solid black;
+}
+
+#botaoEnviar:hover{
+    color: white;
+    background-color: #5D7BC3;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 994px){
+    .conteudo{
+        display: grid;
+        justify-content: center;
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        grid-template-rows: 50px 3fr;
+        grid-template-columns: 1fr;
+        column-gap: 3px;
+        flex-wrap: wrap;
+        height: 80%;
+        width: 98%;
+    }
+    .projeto1{
+        background-color: black;
+        width: 100%;
+        height: 90%;
+        grid-row: 2;
+       
+    }
+    .projeto2{
+        background-color: black;
+        width: 100%;
+        height: 90%;
+        grid-row: 3;
+         
+    }
+    .projeto3{
+        background-color: black;
+        width: 100%;
+        height: 90%;
+        grid-row: 4;
+    }
+}
